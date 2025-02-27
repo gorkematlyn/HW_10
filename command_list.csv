@@ -1,0 +1,25 @@
+    1  clear
+    2  cd ~/Desktop/Goit
+    3  git clone https://github.com/username/HW_10.git
+    4  git clone https://github.com/gorkematlyn/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  echo "text_ignore.txt" >> .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m "text_ignore.txt dosyası .gitignore'a eklendi"
+   11  touch main_text.txt
+   12  git add .
+   13  git commit -m "main_test.txt dosyası oluşturuldu"
+   14  git branch develop
+   15  git checkout develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -m "develop_test.txt dosyası oluşturuldu"
+   19  git status
+   20  git add .
+   21  git commit -m "develop_test.txt dosyasında değişiklik yapıldı"
+   22  git checkout main
+   23  git merge develop
+   24  git log
+   25  history > command_list.csv
